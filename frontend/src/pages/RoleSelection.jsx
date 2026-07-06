@@ -246,7 +246,7 @@ export default function RoleSelection() {
                   gap: '1.25rem'
                 }}>
                   <div className="form-group">
-                    <label className="form-label">Price Per Page ($)</label>
+                    <label className="form-label">Price Per Page (₹)</label>
                     <input
                       type="number"
                       step="0.1"

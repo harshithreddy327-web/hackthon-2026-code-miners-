@@ -573,7 +573,7 @@ app.post('/api/profiles/update', upload.single('handwriting'), async (req, res) 
         const profile = await get('SELECT * FROM profiles WHERE user_id = ?', [userId]);
         const user = await get('SELECT * FROM users WHERE id = ?', [userId]);
         
-        await logDataAccess('UPDATE_PROFILE', userId, `User updated profile: FullName=${full_name}, Phone=${phone_number}, PIN=${pin_code}, Rate=$${rate}`);
+        await logDataAccess('UPDATE_PROFILE', userId, `User updated profile: FullName=${full_name}, Phone=${phone_number}, PIN=${pin_code}, Rate=₹${rate}`);
 
         res.json({ success: true, user, profile });
     } catch (err) {
@@ -778,7 +778,7 @@ app.post('/api/orders/create', upload.single('document'), async (req, res) => {
 
         const order = await get('SELECT * FROM orders WHERE id = ?', [orderId]);
         
-        await logDataAccess('CREATE_ORDER', requester_id, `Placed order ${orderId} to writer ${writer_id} for ${pages} pages. Price: $${totalPrice}`);
+        await logDataAccess('CREATE_ORDER', requester_id, `Placed order ${orderId} to writer ${writer_id} for ${pages} pages. Price: ₹${totalPrice}`);
 
         res.json(order);
     } catch (err) {

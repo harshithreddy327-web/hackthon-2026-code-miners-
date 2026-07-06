@@ -389,7 +389,7 @@ export default function RequesterDashboard() {
 
                       <div style={{ textAlign: 'right' }}>
                         <p style={{ fontSize: '1.1rem', fontWeight: 800, color: 'var(--secondary)' }}>
-                          ${writer.rate_per_page?.toFixed(2)}
+                          ₹{writer.rate_per_page?.toFixed(2)}
                         </p>
                         <p style={{ fontSize: '0.65rem', color: 'var(--text-muted)' }}>per page</p>
                       </div>
@@ -442,7 +442,7 @@ export default function RequesterDashboard() {
                         <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Order ID: {order.id} | Placed: {new Date(order.created_at).toLocaleDateString()}</p>
                       </div>
                       <div style={{ textAlign: 'right' }}>
-                        <p style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--text-primary)' }}>${order.total_price?.toFixed(2)}</p>
+                        <p style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--text-primary)' }}>₹{order.total_price?.toFixed(2)}</p>
                         <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>{order.pages} pages</p>
                       </div>
                     </div>
@@ -690,7 +690,7 @@ export default function RequesterDashboard() {
                 }}>
                   <span style={{ color: 'var(--text-muted)' }}>Estimated Price:</span>
                   <span style={{ fontWeight: 800, color: 'var(--secondary)' }}>
-                    ${(pages * selectedWriter.rate_per_page).toFixed(2)}
+                    ₹{(pages * selectedWriter.rate_per_page).toFixed(2)}
                   </span>
                 </div>
               )}

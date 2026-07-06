@@ -73,7 +73,7 @@ export default function WriterDashboard() {
     setEditError('');
 
     if (!fullName.trim() || !username.trim() || !rate || parseFloat(rate) <= 0 || !phone || !pin) {
-      setEditError('All fields are required and rate must be greater than $0.');
+      setEditError('All fields are required and rate must be greater than ₹0.');
       return;
     }
 
