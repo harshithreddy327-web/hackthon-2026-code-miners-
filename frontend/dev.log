@@ -1,0 +1,23 @@
+
+> neuroscribe-frontend@0.0.0 dev
+> vite
+
+
+  VITE v5.4.21  ready in 1300 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+11:01:19 AM [vite] hmr update /src/index.css
+11:02:36 AM [vite] hmr update /src/App.jsx
+11:02:36 AM [vite] hmr invalidate /src/App.jsx Could not Fast Refresh ("AuthContext" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+11:02:36 AM [vite] page reload src/App.jsx
+11:02:45 AM [vite] hmr update /src/components/Navbar.jsx
+11:03:07 AM [vite] hmr update /src/pages/RoleSelection.jsx
+11:03:44 AM [vite] hmr update /src/pages/Login.jsx
+11:03:52 AM [vite] hmr update /src/index.css
+11:33:37 AM [vite] hmr update /src/components/Navbar.jsx
+11:39:25 AM [vite] hmr update /src/pages/WriterDashboard.jsx
+11:40:31 AM [vite] hmr update /src/pages/RequesterDashboard.jsx
+1:28:59 PM [vite] hmr update /src/index.css
+1:29:07 PM [vite] hmr update /src/index.css
+1:29:26 PM [vite] hmr update /src/index.css

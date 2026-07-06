@@ -1,0 +1,28 @@
+# Node
+node_modules/
+dist/
+.npm/
+node/
+
+# Database and uploads
+backend/database.sqlite
+backend/uploads/*
+!backend/uploads/.gitkeep
+db.sqlite.backup
+
+# Log files and PIDs
+*.log
+.backend.pid
+.frontend.pid
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Project configs / temporary
+.env
+.gemini/
+.agents/
+WhatsApp Image*
+*.webp
+*.png

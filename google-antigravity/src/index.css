@@ -1,0 +1,470 @@
+:root {
+  /* Premium Dark Mode Colors (Default) - Derived from Slate Green #657166 and Mint #DAEBE3 */
+  --bg-color: hsl(128, 7%, 8%);
+  --bg-gradient: radial-gradient(circle at 50% 50%, hsl(128, 7%, 12%) 0%, hsl(128, 7%, 6%) 100%);
+  --text-primary: #DAEBE3;
+  --text-muted: #CFD6C4;
+  --border-glass: rgba(218, 235, 227, 0.08);
+  --border-focus: #99CDD8;
+  --bg-glass: rgba(101, 113, 102, 0.25);
+  --bg-card: rgba(101, 113, 102, 0.35);
+  --shadow-neon: 0 8px 32px 0 rgba(153, 205, 216, 0.10), 0 0 1px 0 rgba(255, 255, 255, 0.08);
+  
+  --primary: #99CDD8;
+  --primary-glow: rgba(153, 205, 216, 0.15);
+  --secondary: #F3C3B2;
+  
+  /* Logo Colors mapped to User's Palette */
+  --logo-blue: #99CDD8;
+  --logo-red: #F3C3B2;
+  --logo-yellow: #FDE8D3;
+  --logo-green: #CFD6C4;
+
+  --font-header: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --radius-lg: 16px;
+  --radius-md: 10px;
+  --radius-sm: 6px;
+}
+
+[data-theme="light"] {
+  /* Premium Light Mode Colors - Palette background blend from Image */
+  --bg-color: #DAEBE3;
+  --bg-gradient: linear-gradient(to bottom, #DAEBE3 0%, #CFD6C4 20%, #FDE8D3 55%, #F3C3B2 78%, #99CDD8 100%);
+  --text-primary: #657166;
+  --text-muted: rgba(101, 113, 102, 0.8);
+  --border-glass: rgba(101, 113, 102, 0.15);
+  --border-focus: #657166;
+  --bg-glass: rgba(255, 255, 255, 0.6);
+  --bg-card: rgba(255, 255, 255, 0.85);
+  --shadow-neon: 0 10px 30px rgba(101, 113, 102, 0.08), 0 1px 3px rgba(0, 0, 0, 0.02);
+  --primary: #657166;
+  --primary-glow: rgba(101, 113, 102, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-gradient);
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow: hidden; /* Prevent scrolling during physics */
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* Base UI Styles */
+button, input {
+  font-family: var(--font-body);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInScale {
+  from { opacity: 0; transform: scale(0.96) translateY(8px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-scale-in {
+  animation: fadeInScale 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Home State Container */
+.home-layout {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  z-index: 10;
+}
+
+/* Top Nav Header */
+.top-nav {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 0.88rem;
+  font-weight: 500;
+  margin-bottom: auto;
+}
+
+.nav-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: var(--text-primary);
+}
+
+/* Central Homepage Body */
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.25rem;
+  margin: auto 0;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Logo Styling */
+.google-logo {
+  font-family: var(--font-header);
+  font-size: 5rem;
+  font-weight: 800;
+  letter-spacing: -2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.google-logo span:nth-child(1), .google-logo span:nth-child(5) { color: var(--logo-blue); }
+.google-logo span:nth-child(2), .google-logo span:nth-child(6) { color: var(--logo-red); }
+.google-logo span:nth-child(3) { color: var(--logo-yellow); }
+.google-logo span:nth-child(4) { color: var(--logo-green); }
+
+/* Search Container */
+.search-bar-container {
+  width: 100%;
+  position: relative;
+  border-radius: 30px;
+  background: var(--bg-glass);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-glass);
+  box-shadow: var(--shadow-neon);
+  display: flex;
+  align-items: center;
+  padding: 4px 16px;
+  transition: all 0.3s ease;
+}
+
+.search-bar-container:focus-within {
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 4px var(--primary-glow);
+}
+
+.search-icon {
+  color: var(--text-muted);
+  margin-right: 12px;
+  display: flex;
+}
+
+.search-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 12px 0;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  pointer-events: auto;
+}
+
+.search-tools {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-muted);
+}
+
+/* Google Action Buttons */
+.buttons-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.google-btn {
+  background: var(--bg-glass);
+  border: 1px solid var(--border-glass);
+  border-radius: 20px;
+  padding: 10px 22px;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.google-btn:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary);
+  box-shadow: 0 0 12px var(--primary-glow);
+}
+
+.google-btn:active {
+  transform: translateY(0);
+}
+
+/* Footer Link Bar */
+.footer-bar {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  margin-top: auto;
+  border-top: 1px solid var(--border-glass);
+  padding-top: 1rem;
+}
+
+.footer-section {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Physics State Overrides */
+.physics-body {
+  position: fixed !important;
+  left: 0;
+  top: 0;
+  margin: 0;
+  pointer-events: auto;
+  z-index: 50;
+  cursor: grab;
+}
+
+.physics-body:active {
+  cursor: grabbing;
+}
+
+/* Search Card Spawns */
+.search-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-md);
+  padding: 18px;
+  width: 320px;
+  box-shadow: var(--shadow-neon);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: border-color 0.2s ease;
+}
+
+.search-card:hover {
+  border-color: var(--primary);
+}
+
+.card-title {
+  font-family: var(--font-header);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--logo-blue);
+  text-decoration: none;
+}
+
+.card-snippet {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* Premium Dashboard UI */
+.control-dashboard {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  z-index: 100;
+  width: 280px;
+  background: var(--bg-glass);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--shadow-neon);
+}
+
+.dashboard-title {
+  font-family: var(--font-header);
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primary);
+}
+
+.slider-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.slider-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-input {
+  width: 100%;
+  accent-color: var(--primary);
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.1);
+  outline: none;
+  cursor: pointer;
+}
+
+.action-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.dashboard-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-sm);
+  padding: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.dashboard-btn:hover {
+  background: var(--primary-glow);
+  border-color: var(--primary);
+}
+
+.dashboard-btn.active {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+/* Direction Pad */
+.direction-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.dir-btn {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-glass);
+  border-radius: 4px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: all 0.2s;
+}
+
+.dir-btn:hover, .dir-btn.active {
+  color: var(--text-primary);
+  background: var(--primary-glow);
+  border-color: var(--primary);
+}
+
+/* Theme Toggle Button */
+.theme-toggle-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-glass);
+  border-radius: 20px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.theme-toggle-header:hover {
+  border-color: var(--primary);
+}
+
+/* Chaos Auto-Tester Panel */
+.tester-panel {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 100;
+  width: 240px;
+  background: var(--bg-glass);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  box-shadow: var(--shadow-neon);
+}
+
+/* Initial Floating Idle Animation before physics is triggered */
+@keyframes floatIdle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(0.5deg);
+  }
+}
+
+.home-layout:not(.physics-playground) .google-logo {
+  animation: floatIdle 5s ease-in-out infinite;
+}
+
+.home-layout:not(.physics-playground) .search-bar-container {
+  animation: floatIdle 6s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.home-layout:not(.physics-playground) .buttons-row {
+  animation: floatIdle 5.5s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.home-layout:not(.physics-playground) .top-nav {
+  animation: floatIdle 7s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+.home-layout:not(.physics-playground) .footer-bar {
+  animation: floatIdle 8s ease-in-out infinite;
+  animation-delay: 1.5s;
+}

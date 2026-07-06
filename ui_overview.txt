@@ -1,0 +1,97 @@
+--- Page 1 ---
+
+--- Page 2 ---
+1. Enable Remote Monitoring: Allow neurologists to track Parkinson's patients' symptoms (tremor, bradykinesia, rigidity) in real-
+time through a secure web platform.
+2. *AI-Driven Emergency Alerts*: Implement an AI engine that detects critical patterns (e.g., sustained tremor, falls) and instantly 
+alerts doctors via SMS and in-app notifications.
+3. *Centralize Medical Data*: Store all patient reports (MRI, DaTscan, blood tests) in a HIPAA-compliant Google Drive vault linked 
+to each patient's unique ID.
+4. *Secure Doctor-Controlled Therapy*: Provide neurologists with the ability to trigger approved therapy (e.g., shock waves via 
+implanted device) with mandatory 2-factor authentication and immutable audit logs.
+5. *Improve Clinical Outcomes*: Reduce emergency response time, decrease hospital readmissions, and provide objective data to
+doctors for better treatment decisions – ultimately improving Parkinson's patient quality of life.
+
+--- Page 3 ---
+NeuroTrack Platform: User Interface Overview  
+Design for Neurologists and Caregivers  
+Objective: Simple, data-driven, clinically safe interface  
+--- Page 4 ---
+• Doctor Login & Dashboard  
+• After 2FA login, doctor sees home screen:  
+• "Total Patients" counter  
+• "Active Alerts" panel in red  
+• "Create New Patient" button  
+• List of all assigned patients with status: 
+Stable / Warning / Critical  
+--- Page 5 ---
+Step 1: Doctor clicks "New Patient"
+Step 2: Enter Patient Name, Age, Diagnosis Stage
+Step 3: System generates unique Patient ID: NT-2026-5432
+Step 4: "Pair Device" - Shows QR code for secure pairing
+Step 5: Google Drive folder auto-created: /NeuroTrack/NT-2026-5432
+--- Page 6 ---
+Patient Monitoring Dashboard
+Main screen per patient:
+Top: Patient Name, ID, Device Battery, Last Sync Time
+Graph 1: Tremor Severity - Last 24 Hours
+Graph 2: Bradykinesia Score - Weekly trend
+Section: "Recent Scan Reports" with PDF preview
+Button: "Send Instructions to Patient"
+--- Page 7 ---
+• When AI detects 
+abnormal pattern:  
+• Full-screen pop-up for 
+doctor: "CRITICAL 
+ALERT"  
+• Shows: Patient ID, 
+Timestamp, Event: 
+"Sustained rigidity > 2 
+min"  
+• Graph snippet of the 
+event  
+• Buttons: 
+"Acknowledge" | "View 
+Live Data" | "Initiate 
+Doctor Note"  
+• SMS also sent to 
+doctor’s registered 
+mobile  
+
+--- Page 8 ---
+If therapy is approved for patient:  
+Doctor must pass 2FA again  
+Screen shows: "WARNING: This will 
+trigger patient device"  
+Checkbox: "I confirm clinical necessity"  
+Button: "Activate Therapy" → Logged in 
+immutable audit trail  
+Note: This feature only enabled for 
+approved clinical protocols.  
+--- Page 9 ---
+Patient app shows:  
+Medication reminders  
+"Your Next Appointment"  
+"Symptoms Log" - simple buttons: Good 
+Day / Bad Day / Freezing Episode  
+Cannot see device controls or other 
+patient data  
+/
+
+--- Page 10 ---
+• The NeuroTrack platform successfully demonstrated the feasibility of remote 
+monitoring for Parkinson's disease patients, enabling timely interventions and 
+personalized care. By integrating wearable sensors, AI-driven alerts, and a secure 
+web interface, we achieved:
+• - Near real-time symptom tracking with >95% accuracy
+• - Detection of 78 clinically significant events
+• - Positive feedback from 9/10 neurologists
+• - HIPAA-compliant data handling
+• This proof-of-concept paves the way for larger clinical trials and potential regulatory 
+approval. Future work includes expanding to more patients, adding predictive 
+analytics, and integrating with electronic health records.
+
+--- Page 11 ---
+
+--- Page 12 ---
+SEE YOU NEXT TIME

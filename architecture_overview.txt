@@ -1,0 +1,96 @@
+--- Page 1 ---
+N e u r o T r a c k :
+T e c h n i c a l  A r c h i t e c t u r e
+Full system architecture overview covering IoT device communication,
+backend processing, AI detection, frontend, storage, and
+authentication. Focus areas: Security, Compliance, Real-time
+Performance.
+Technical Deep Dive
+Where We Use What
+NeuroTrack Systems
+--- Page 2 ---
+P a t i e n t  I o T
+D e v i c e
+C o m m u n i c a t i o n
+Protocol: MQTT with TLS 1.3 for
+lightweight, real-time neural data streaming
+Security: AES-256 encryption + Certificate
+Pinning on every device connection
+Cloud: AWS IoT Core (HIPAA eligible)
+receives all implant & wearable data
+Latency: <1 second end-to-end for critical
+emergency detection triggers
+NeuroTrack Technical Deep
+Dive
+--- Page 3 ---
+B a c k e n d  D a t a
+P r o c e s s i n g
+Node.js + FastAPI runtime receives and
+processes all incoming device data streams
+PostgreSQL + TimescaleDB stores time-
+series tremor data with efficient graph
+queries
+Apache Kafka manages high-volume
+streaming queues from multiple IoT devices
+Flow: MQTT Broker → Kafka → FastAPI →
+TimescaleDB for real-time pipeline
+NeuroTrack
+--- Page 4 ---
+Component 3: AI
+Emergency Detection
+AI microservice in cloud. Detects critical patterns (freezing, sustained
+tremor) using Isolation Forest model trained on clinical thresholds.
+Raw Data → AI Service → Alert
+Trigger
+Docker Container on AWS ECS
+Python 3.11 · Scikit-learn · Pandas
+NeuroTrack
+--- Page 5 ---
+Component 4: Frontend
+Web Application
+React 18 + TypeScript  |  Tailwind CSS + Recharts  |  WebSockets  |  Redux
+Toolkit
+Component reuse with React, type safety via TypeScript, real-time updates via
+WebSockets.
+Studio Shodwe
+--- Page 6 ---
+F i l e  S t o r a g e  &
+C o m p l i a n c e
+Google Drive API v3 with service account
+for MRI, DaTscan & blood report storage
+Dedicated folder per Patient ID with OAuth2
+scope restricted to app access only
+Files encrypted pre-upload; end-to-end
+security before reaching Drive storage
+AWS S3 HIPAA-eligible bucket as redundant
+backup; meets hospital compliance
+workflows
+Studio Shodwe
+--- Page 7 ---
+Component 6: Auth &
+Audit System
+HIPAA-compliant authentication with immutable audit trails at every critical action
+point.
+Non-repudiation — Meets IEC 62304 & HIPAA-
+BAA
+AWS CloudTrail + QLDB — Immutable Audit
+Logging
+Auth0 / Firebase Auth — Email + Password +
+TOTP 2FA
+NeuroTrack
+--- Page 8 ---
+AI Alerts
+Python + Docker
+Isolated, auditable service
+Real-time Data
+MQTT + WebSockets
+<1s emergency response
+Device Security
+TLS 1.3 + Cert Pinning
+Prevents MITM attacks
+Patient Data Storage
+PostgreSQL + Drive API
+Encryption + Access Control
+Development &
+Compliance
+Summary
