@@ -2,37 +2,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Caveat:wght@400;700&family=Homemade+Apple&family=Indie+Flower&family=Architects+Daughter&display=swap');
 
 :root {
-  --bg-space: #DAEBE3;
-  --bg-deep: linear-gradient(to bottom, #DAEBE3 0%, #CFD6C4 20%, #FDE8D3 55%, #F3C3B2 78%, #99CDD8 100%);
-  --bg-card: rgba(255, 255, 255, 0.72);
-  --bg-card-hover: rgba(255, 255, 255, 0.9);
+  --eucalyptus: #CDD4B1;
+  --pistachio: #EBECCC;
+  --peach: #FEECD0;
+  --ivory: #FFF9E2;
+  --clay: #DCA278;
+  --clay-dark: #B87E56;
+  --text-dark: #3E4A38;
   
-  --primary: #657166;
-  --primary-glow: rgba(101, 113, 102, 0.1);
-  --primary-hover: #CFD6C4;
+  --bg-space: var(--pistachio);
+  --bg-deep: linear-gradient(135deg, var(--eucalyptus), var(--peach), var(--pistachio));
+  --bg-card: rgba(255, 249, 226, 0.75);
+  --bg-card-hover: rgba(255, 249, 226, 0.88);
   
-  --secondary: #99CDD8;
-  --secondary-glow: rgba(153, 205, 216, 0.15);
+  --primary: var(--clay);
+  --primary-glow: rgba(220, 162, 120, 0.15);
+  --primary-hover: var(--clay-dark);
   
-  --accent-emerald: #657166;
-  --accent-amber: #FDE8D3;
-  --accent-rose: #F3C3B2;
+  --secondary: var(--eucalyptus);
+  --secondary-glow: rgba(205, 212, 177, 0.15);
   
-  --text-primary: #657166;
-  --text-muted: rgba(101, 113, 102, 0.75);
-  --text-dark: #657166;
+  --accent-emerald: var(--clay-dark);
+  --accent-amber: var(--peach);
+  --accent-rose: var(--clay);
   
-  --border-glass: rgba(101, 113, 102, 0.15);
-  --border-focus: #99CDD8;
+  --text-primary: var(--text-dark);
+  --text-muted: #7A8574;
+  --text-dark: var(--text-dark);
   
-  --shadow-neon: 0 8px 32px 0 rgba(101, 113, 102, 0.08);
-  --shadow-emerald: 0 4px 16px 0 rgba(101, 113, 102, 0.05);
-  --shadow-rose: 0 4px 16px 0 rgba(243, 195, 178, 0.2);
+  --border-glass: rgba(255, 255, 255, 0.6);
+  --border-focus: var(--clay);
+  
+  --shadow-neon: 0 10px 30px rgba(62, 74, 56, 0.08);
+  --shadow-emerald: 0 4px 16px rgba(62, 74, 56, 0.04);
+  --shadow-rose: 0 4px 16px rgba(220, 162, 120, 0.2);
   
   --font-main: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --radius-sm: 8px;
-  --radius-md: 16px;
-  --radius-lg: 24px;
+  --radius-sm: 12px;
+  --radius-md: 24px;
+  --radius-lg: 32px;
 }
 
 * {
@@ -60,23 +68,74 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+
+/* Hardware-Accelerated Floating Background Shapes */
+@keyframes floatShapes {
+  0% { transform: translateY(0) rotate(0deg); }
+  100% { transform: translateY(-30px) rotate(15deg); }
+}
+
+body::before, body::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(5px);
+  z-index: -1;
+  animation: floatShapes 8s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+body::before {
+  width: 150px;
+  height: 150px;
+  background: var(--clay);
+  top: 15%;
+  left: 20%;
+  opacity: 0.3;
+}
+
+body::after {
+  width: 200px;
+  height: 200px;
+  background: var(--eucalyptus);
+  bottom: 10%;
+  right: 15%;
+  opacity: 0.4;
+  animation-delay: -3s;
 }
 
 /* ===================== GLASSMORPHISM ===================== */
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-4px); }
+@keyframes floatCard {
+  0% {
+    transform: translateY(0px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotateX(2deg) rotateY(-1deg);
+    box-shadow: 
+      0 25px 40px rgba(62, 74, 56, 0.12),
+      0 1px 3px rgba(255, 255, 255, 0.8) inset,
+      0 30px 50px rgba(220, 162, 120, 0.20);
+  }
+  100% {
+    transform: translateY(0px) rotateX(0deg) rotateY(0deg);
+  }
 }
 
 .glass-panel {
   background: var(--bg-card);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border-glass);
   border-radius: var(--radius-md);
-  box-shadow: 0 8px 32px 0 rgba(101, 113, 102, 0.06);
+  box-shadow: 
+    0 10px 30px rgba(62, 74, 56, 0.08),
+    0 1px 3px rgba(255, 255, 255, 0.8) inset,
+    0 20px 40px rgba(220, 162, 120, 0.12);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  animation: float 6s ease-in-out infinite;
+  animation: floatCard 6s ease-in-out infinite;
+  will-change: transform;
 }
 
 .glass-panel:nth-of-type(even) {
@@ -90,14 +149,17 @@ body {
 .glass-panel-hover:hover {
   background: var(--bg-card-hover);
   border-color: var(--border-focus);
-  box-shadow: var(--shadow-neon);
+  box-shadow: 
+    0 30px 50px rgba(62, 74, 56, 0.18),
+    0 1px 3px rgba(255, 255, 255, 0.9) inset,
+    0 40px 60px rgba(220, 162, 120, 0.26);
   transform: translateY(-3px) !important;
   animation-play-state: paused;
 }
 
 /* ===================== BUTTONS ===================== */
 .btn-primary {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  background: var(--clay);
   border: none;
   color: #fff;
   font-family: var(--font-main);
@@ -105,8 +167,9 @@ body {
   padding: 12px 24px;
   border-radius: var(--radius-sm);
   cursor: pointer;
-  box-shadow: 0 4px 16px 0 var(--primary-glow);
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  border-bottom: 4px solid var(--clay-dark);
+  box-shadow: 0 5px 15px rgba(220, 162, 120, 0.3);
+  transition: all 0.1s ease;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -116,19 +179,25 @@ body {
 }
 
 .btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 24px 0 rgba(101, 113, 102, 0.2);
-  filter: brightness(1.1);
+  background: #E2AC84;
+  transform: translateY(1px);
+  border-bottom-width: 3px;
+  box-shadow: 0 6px 20px rgba(220, 162, 120, 0.35);
+  filter: none;
 }
 
-.btn-primary:active { transform: translateY(0); }
+.btn-primary:active {
+  transform: translateY(4px);
+  border-bottom-width: 0px;
+  box-shadow: 0 2px 5px rgba(220, 162, 120, 0.2);
+}
 
 .btn-primary:disabled {
   opacity: 0.45;
   cursor: not-allowed;
   transform: none;
+  border-bottom-width: 4px;
   box-shadow: none;
-  filter: none;
 }
 
 .btn-secondary {
