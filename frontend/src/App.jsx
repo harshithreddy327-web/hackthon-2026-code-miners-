@@ -240,6 +240,14 @@ export default function App() {
 
   return (
     <AuthContext.Provider value={{ user, profile, login, oauthLogin, signup, signin, switchAccount, register, logout, loading, setUser, setProfile }}>
+      <div className="falling-container">
+        <div className="falling-leaf"></div>
+        <div className="falling-leaf"></div>
+        <div className="falling-leaf"></div>
+        <div className="falling-leaf"></div>
+        <div className="falling-leaf"></div>
+        <div className="falling-leaf"></div>
+      </div>
       <BrowserRouter>
         <Routes>
           <Route path="/login" element={<Login />} />

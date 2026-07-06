@@ -25,3 +25,7 @@
 3:18:07 PM [vite] hmr update /src/pages/RequesterDashboard.jsx
 3:18:20 PM [vite] hmr update /src/pages/RoleSelection.jsx
 3:18:52 PM [vite] hmr update /src/pages/WriterDashboard.jsx
+3:23:27 PM [vite] hmr update /src/index.css
+3:23:32 PM [vite] hmr update /src/App.jsx
+3:23:33 PM [vite] hmr invalidate /src/App.jsx Could not Fast Refresh ("AuthContext" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+3:23:33 PM [vite] page reload src/App.jsx

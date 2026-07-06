@@ -442,3 +442,97 @@ body::after {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4), 0 0 12px var(--primary-glow);
 }
+
+/* ===================== GPU-ACCELERATED FALLING PASTEL ELEMENTS ===================== */
+.falling-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-20vh) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.5;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(120vh) translateX(50px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.falling-leaf {
+  position: absolute;
+  top: 0;
+  border-radius: 50% 0 50% 50%;
+  pointer-events: none;
+  animation: fall 12s linear infinite;
+  will-change: transform;
+}
+
+.falling-leaf:nth-of-type(1) {
+  left: 10%;
+  width: 25px;
+  height: 25px;
+  background: var(--eucalyptus);
+  animation-duration: 14s;
+  animation-delay: 0s;
+}
+
+.falling-leaf:nth-of-type(2) {
+  left: 30%;
+  width: 35px;
+  height: 35px;
+  background: var(--peach);
+  animation-duration: 18s;
+  animation-delay: -3s;
+}
+
+.falling-leaf:nth-of-type(3) {
+  left: 55%;
+  width: 20px;
+  height: 20px;
+  background: var(--clay);
+  animation-duration: 12s;
+  animation-delay: -6s;
+  opacity: 0.3;
+}
+
+.falling-leaf:nth-of-type(4) {
+  left: 75%;
+  width: 30px;
+  height: 30px;
+  background: var(--pistachio);
+  animation-duration: 20s;
+  animation-delay: -1s;
+}
+
+.falling-leaf:nth-of-type(5) {
+  left: 90%;
+  width: 24px;
+  height: 24px;
+  background: var(--clay-dark);
+  animation-duration: 16s;
+  animation-delay: -10s;
+  opacity: 0.25;
+}
+
+.falling-leaf:nth-of-type(6) {
+  left: 45%;
+  width: 28px;
+  height: 28px;
+  background: var(--eucalyptus);
+  animation-duration: 15s;
+  animation-delay: -8s;
+}
