@@ -29,3 +29,450 @@
 3:23:32 PM [vite] hmr update /src/App.jsx
 3:23:33 PM [vite] hmr invalidate /src/App.jsx Could not Fast Refresh ("AuthContext" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
 3:23:33 PM [vite] page reload src/App.jsx
+3:26:38 PM [vite] hmr update /src/pages/RequesterDashboard.jsx
+3:26:55 PM [vite] hmr update /src/pages/RequesterDashboard.jsx
+3:26:55 PM [vite] Internal server error: /Users/mac/neuro tec/frontend/src/pages/RequesterDashboard.jsx: Expected corresponding JSX closing tag for <>. (454:10)
+
+  452 |               </div>
+  453 |             )}
+> 454 |           </div>
+      |           ^
+  455 |
+  456 |           {/* Section: My Orders */}
+  457 |           <div className="glass-panel" style={{ padding: '2rem' }}>
+  Plugin: vite:react-babel
+  File: /Users/mac/neuro tec/frontend/src/pages/RequesterDashboard.jsx:454:10
+  452|                </div>
+  453|              )}
+  454|            </div>
+     |            ^
+  455|  
+  456|            {/* Section: My Orders */}
+      at constructor (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:365:19)
+      at JSXParserMixin.raise (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:6616:19)
+      at JSXParserMixin.jsxParseElementAt (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4732:14)
+      at JSXParserMixin.jsxParseElement (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4761:17)
+      at JSXParserMixin.parseExprAtom (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4771:19)
+      at JSXParserMixin.parseExprSubscripts (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11098:23)
+      at JSXParserMixin.parseUpdate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10916:61)
+      at JSXParserMixin.parseExprOps (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10848:21)
+      at /Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10817:39
+      at JSXParserMixin.allowInAnd (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12443:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10817:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12510:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11692:28)
+      at JSXParserMixin.parseExprAtom (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11348:23)
+      at JSXParserMixin.parseExprAtom (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4776:20)
+      at JSXParserMixin.parseExprSubscripts (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11098:23)
+      at JSXParserMixin.parseUpdate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10916:61)
+      at JSXParserMixin.parseExprOps (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10848:21)
+      at JSXParserMixin.parseConditional (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10910:29)
+      at JSXParserMixin.parseMaybeConditional (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10902:17)
+      at JSXParserMixin.parseMaybeAssign (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10848:21)
+      at JSXParserMixin.parseConditional (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10910:29)
+      at JSXParserMixin.parseMaybeConditional (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10902:17)
+      at JSXParserMixin.parseMaybeAssign (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10848:21)
+      at JSXParserMixin.parseExpressionBase (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10801:23)
+      at /Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10797:39
+      at JSXParserMixin.allowInAnd (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12443:12)
+      at JSXParserMixin.parseExpression (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10797:17)
+      at JSXParserMixin.jsxParseExpressionContainer (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4644:31)
+      at JSXParserMixin.jsxParseElementAt (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4723:36)
+      at JSXParserMixin.jsxParseElementAt (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4710:32)
+      at JSXParserMixin.jsxParseElementAt (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4710:32)
+      at JSXParserMixin.jsxParseElementAt (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4710:32)
+      at JSXParserMixin.jsxParseElement (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4761:17)
+      at JSXParserMixin.parseExprAtom (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4771:19)
+      at JSXParserMixin.parseExprSubscripts (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11098:23)
+      at JSXParserMixin.parseUpdate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10916:61)
+      at JSXParserMixin.parseExprOps (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10848:21)
+3:26:55 PM [vite] Pre-transform error: /Users/mac/neuro tec/frontend/src/pages/RequesterDashboard.jsx: Expected corresponding JSX closing tag for <>. (454:10)
+
+  452 |               </div>
+  453 |             )}
+> 454 |           </div>
+      |           ^
+  455 |
+  456 |           {/* Section: My Orders */}
+  457 |           <div className="glass-panel" style={{ padding: '2rem' }}>
+3:26:55 PM [vite] Internal server error: /Users/mac/neuro tec/frontend/src/pages/RequesterDashboard.jsx: Expected corresponding JSX closing tag for <>. (454:10)
+
+  452 |               </div>
+  453 |             )}
+> 454 |           </div>
+      |           ^
+  455 |
+  456 |           {/* Section: My Orders */}
+  457 |           <div className="glass-panel" style={{ padding: '2rem' }}>
+  Plugin: vite:react-babel
+  File: /Users/mac/neuro tec/frontend/src/pages/RequesterDashboard.jsx:454:10
+  452|                </div>
+  453|              )}
+  454|            </div>
+     |            ^
+  455|  
+  456|            {/* Section: My Orders */}
+      at constructor (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:365:19)
+      at JSXParserMixin.raise (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:6616:19)
+      at JSXParserMixin.jsxParseElementAt (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4732:14)
+      at JSXParserMixin.jsxParseElement (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4761:17)
+      at JSXParserMixin.parseExprAtom (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4771:19)
+      at JSXParserMixin.parseExprSubscripts (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11098:23)
+      at JSXParserMixin.parseUpdate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10916:61)
+      at JSXParserMixin.parseExprOps (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10848:21)
+      at /Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10817:39
+      at JSXParserMixin.allowInAnd (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12443:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10817:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12510:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11692:28)
+      at JSXParserMixin.parseExprAtom (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11348:23)
+      at JSXParserMixin.parseExprAtom (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4776:20)
+      at JSXParserMixin.parseExprSubscripts (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11098:23)
+      at JSXParserMixin.parseUpdate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10916:61)
+      at JSXParserMixin.parseExprOps (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10848:21)
+      at JSXParserMixin.parseConditional (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10910:29)
+      at JSXParserMixin.parseMaybeConditional (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10902:17)
+      at JSXParserMixin.parseMaybeAssign (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10848:21)
+      at JSXParserMixin.parseConditional (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10910:29)
+      at JSXParserMixin.parseMaybeConditional (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10902:17)
+      at JSXParserMixin.parseMaybeAssign (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10848:21)
+      at JSXParserMixin.parseExpressionBase (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10801:23)
+      at /Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10797:39
+      at JSXParserMixin.allowInAnd (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12443:12)
+      at JSXParserMixin.parseExpression (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10797:17)
+      at JSXParserMixin.jsxParseExpressionContainer (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4644:31)
+      at JSXParserMixin.jsxParseElementAt (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4723:36)
+      at JSXParserMixin.jsxParseElementAt (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4710:32)
+      at JSXParserMixin.jsxParseElementAt (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4710:32)
+      at JSXParserMixin.jsxParseElementAt (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4710:32)
+      at JSXParserMixin.jsxParseElement (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4761:17)
+      at JSXParserMixin.parseExprAtom (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4771:19)
+      at JSXParserMixin.parseExprSubscripts (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11098:23)
+      at JSXParserMixin.parseUpdate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10916:61)
+      at JSXParserMixin.parseExprOps (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10848:21)
+3:27:04 PM [vite] hmr update /src/pages/RequesterDashboard.jsx
+3:27:26 PM [vite] hmr update /src/pages/RequesterDashboard.jsx
+3:27:26 PM [vite] Internal server error: /Users/mac/neuro tec/frontend/src/pages/RequesterDashboard.jsx: Unexpected token, expected "," (451:16)
+
+  449 |                     </div>
+  450 |                   </div>
+> 451 |                 }))}
+      |                 ^
+  452 |               </div>
+  453 |             )}
+  454 |           </>
+  Plugin: vite:react-babel
+  File: /Users/mac/neuro tec/frontend/src/pages/RequesterDashboard.jsx:451:16
+  449|                      </div>
+  450|                    </div>
+  451|                  }))}
+     |                  ^
+  452|                </div>
+  453|              )}
+      at constructor (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:365:19)
+      at JSXParserMixin.raise (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:6616:19)
+      at JSXParserMixin.unexpected (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:6636:16)
+      at JSXParserMixin.expect (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:6916:12)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11678:14)
+      at JSXParserMixin.parseExprAtom (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11348:23)
+      at JSXParserMixin.parseExprAtom (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4776:20)
+      at JSXParserMixin.parseExprSubscripts (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11098:23)
+      at JSXParserMixin.parseUpdate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10916:61)
+      at JSXParserMixin.parseExprOps (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10848:21)
+      at JSXParserMixin.parseFunctionBody (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12110:24)
+      at JSXParserMixin.parseArrowExpression (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12092:10)
+      at JSXParserMixin.parseExprAtom (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11455:25)
+      at JSXParserMixin.parseExprAtom (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4776:20)
+      at JSXParserMixin.parseExprSubscripts (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11098:23)
+      at JSXParserMixin.parseUpdate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10916:61)
+      at JSXParserMixin.parseExprOps (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10848:21)
+      at /Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10817:39
+      at JSXParserMixin.allowInAnd (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12443:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10817:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12510:17)
+      at JSXParserMixin.parseExprListItem (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12192:18)
+      at JSXParserMixin.parseCallExpressionArguments (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11269:22)
+      at JSXParserMixin.parseCoverCallAndAsyncArrowHead (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11203:29)
+      at JSXParserMixin.parseSubscript (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11137:19)
+      at JSXParserMixin.parseSubscripts (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11111:19)
+      at JSXParserMixin.parseExprSubscripts (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11102:17)
+      at JSXParserMixin.parseUpdate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10916:61)
+      at JSXParserMixin.parseExprOps (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10848:21)
+      at JSXParserMixin.parseExpressionBase (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10801:23)
+      at /Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10797:39
+      at JSXParserMixin.allowInAnd (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12443:12)
+      at JSXParserMixin.parseExpression (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10797:17)
+      at JSXParserMixin.jsxParseExpressionContainer (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4644:31)
+      at JSXParserMixin.jsxParseElementAt (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4723:36)
+      at JSXParserMixin.jsxParseElement (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4761:17)
+      at JSXParserMixin.parseExprAtom (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4771:19)
+      at JSXParserMixin.parseExprSubscripts (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11098:23)
+3:27:27 PM [vite] Pre-transform error: /Users/mac/neuro tec/frontend/src/pages/RequesterDashboard.jsx: Unexpected token, expected "," (451:16)
+
+  449 |                     </div>
+  450 |                   </div>
+> 451 |                 }))}
+      |                 ^
+  452 |               </div>
+  453 |             )}
+  454 |           </>
+3:27:27 PM [vite] Internal server error: /Users/mac/neuro tec/frontend/src/pages/RequesterDashboard.jsx: Unexpected token, expected "," (451:16)
+
+  449 |                     </div>
+  450 |                   </div>
+> 451 |                 }))}
+      |                 ^
+  452 |               </div>
+  453 |             )}
+  454 |           </>
+  Plugin: vite:react-babel
+  File: /Users/mac/neuro tec/frontend/src/pages/RequesterDashboard.jsx:451:16
+  449|                      </div>
+  450|                    </div>
+  451|                  }))}
+     |                  ^
+  452|                </div>
+  453|              )}
+      at constructor (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:365:19)
+      at JSXParserMixin.raise (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:6616:19)
+      at JSXParserMixin.unexpected (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:6636:16)
+      at JSXParserMixin.expect (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:6916:12)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11678:14)
+      at JSXParserMixin.parseExprAtom (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11348:23)
+      at JSXParserMixin.parseExprAtom (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4776:20)
+      at JSXParserMixin.parseExprSubscripts (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11098:23)
+      at JSXParserMixin.parseUpdate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10916:61)
+      at JSXParserMixin.parseExprOps (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10848:21)
+      at JSXParserMixin.parseFunctionBody (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12110:24)
+      at JSXParserMixin.parseArrowExpression (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12092:10)
+      at JSXParserMixin.parseExprAtom (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11455:25)
+      at JSXParserMixin.parseExprAtom (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4776:20)
+      at JSXParserMixin.parseExprSubscripts (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11098:23)
+      at JSXParserMixin.parseUpdate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10916:61)
+      at JSXParserMixin.parseExprOps (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10848:21)
+      at /Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10817:39
+      at JSXParserMixin.allowInAnd (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12443:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10817:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12510:17)
+      at JSXParserMixin.parseExprListItem (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12192:18)
+      at JSXParserMixin.parseCallExpressionArguments (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11269:22)
+      at JSXParserMixin.parseCoverCallAndAsyncArrowHead (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11203:29)
+      at JSXParserMixin.parseSubscript (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11137:19)
+      at JSXParserMixin.parseSubscripts (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11111:19)
+      at JSXParserMixin.parseExprSubscripts (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11102:17)
+      at JSXParserMixin.parseUpdate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10916:61)
+      at JSXParserMixin.parseExprOps (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10848:21)
+      at JSXParserMixin.parseExpressionBase (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10801:23)
+      at /Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10797:39
+      at JSXParserMixin.allowInAnd (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12443:12)
+      at JSXParserMixin.parseExpression (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10797:17)
+      at JSXParserMixin.jsxParseExpressionContainer (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4644:31)
+      at JSXParserMixin.jsxParseElementAt (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4723:36)
+      at JSXParserMixin.jsxParseElement (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4761:17)
+      at JSXParserMixin.parseExprAtom (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4771:19)
+      at JSXParserMixin.parseExprSubscripts (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11098:23)
+3:27:53 PM [vite] hmr update /src/pages/RequesterDashboard.jsx
+3:27:53 PM [vite] Pre-transform error: /Users/mac/neuro tec/frontend/src/pages/RequesterDashboard.jsx: Unexpected token, expected "," (451:16)
+
+  449 |                     </div>
+  450 |                   </div>
+> 451 |                 }))
+      |                 ^
+  452 |               </div>
+  453 |             )}
+  454 |           </>
+3:27:53 PM [vite] Internal server error: /Users/mac/neuro tec/frontend/src/pages/RequesterDashboard.jsx: Unexpected token, expected "," (451:16)
+
+  449 |                     </div>
+  450 |                   </div>
+> 451 |                 }))
+      |                 ^
+  452 |               </div>
+  453 |             )}
+  454 |           </>
+  Plugin: vite:react-babel
+  File: /Users/mac/neuro tec/frontend/src/pages/RequesterDashboard.jsx:451:16
+  449|                      </div>
+  450|                    </div>
+  451|                  }))
+     |                  ^
+  452|                </div>
+  453|              )}
+      at constructor (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:365:19)
+      at JSXParserMixin.raise (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:6616:19)
+      at JSXParserMixin.unexpected (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:6636:16)
+      at JSXParserMixin.expect (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:6916:12)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11678:14)
+      at JSXParserMixin.parseExprAtom (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11348:23)
+      at JSXParserMixin.parseExprAtom (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4776:20)
+      at JSXParserMixin.parseExprSubscripts (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11098:23)
+      at JSXParserMixin.parseUpdate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10916:61)
+      at JSXParserMixin.parseExprOps (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10848:21)
+      at JSXParserMixin.parseFunctionBody (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12110:24)
+      at JSXParserMixin.parseArrowExpression (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12092:10)
+      at JSXParserMixin.parseExprAtom (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11455:25)
+      at JSXParserMixin.parseExprAtom (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4776:20)
+      at JSXParserMixin.parseExprSubscripts (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11098:23)
+      at JSXParserMixin.parseUpdate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10916:61)
+      at JSXParserMixin.parseExprOps (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10848:21)
+      at /Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10817:39
+      at JSXParserMixin.allowInAnd (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12443:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10817:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12510:17)
+      at JSXParserMixin.parseExprListItem (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12192:18)
+      at JSXParserMixin.parseCallExpressionArguments (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11269:22)
+      at JSXParserMixin.parseCoverCallAndAsyncArrowHead (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11203:29)
+      at JSXParserMixin.parseSubscript (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11137:19)
+      at JSXParserMixin.parseSubscripts (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11111:19)
+      at JSXParserMixin.parseExprSubscripts (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11102:17)
+      at JSXParserMixin.parseUpdate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10916:61)
+      at JSXParserMixin.parseExprOps (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10848:21)
+      at JSXParserMixin.parseExpressionBase (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10801:23)
+      at /Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10797:39
+      at JSXParserMixin.allowInAnd (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12443:12)
+      at JSXParserMixin.parseExpression (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10797:17)
+      at JSXParserMixin.jsxParseExpressionContainer (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4644:31)
+      at JSXParserMixin.jsxParseElementAt (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4723:36)
+      at JSXParserMixin.jsxParseElement (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4761:17)
+      at JSXParserMixin.parseExprAtom (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4771:19)
+      at JSXParserMixin.parseExprSubscripts (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11098:23)
+3:28:34 PM [vite] hmr update /src/pages/RequesterDashboard.jsx
+3:28:34 PM [vite] Pre-transform error: /Users/mac/neuro tec/frontend/src/pages/RequesterDashboard.jsx: Unexpected token, expected "..." (446:29)
+
+  444 |                           backgroundColor: selectedWriter?.id === writer.id ? 'var(--accent-emerald)' : 'var(--primary)'
+  445 |                         }}
+> 446 |                             {writer.full_name[0]}
+      |                              ^
+  447 |                           </div>
+  448 |                           <div>
+  449 |                             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+3:28:34 PM [vite] Internal server error: /Users/mac/neuro tec/frontend/src/pages/RequesterDashboard.jsx: Unexpected token, expected "..." (446:29)
+
+  444 |                           backgroundColor: selectedWriter?.id === writer.id ? 'var(--accent-emerald)' : 'var(--primary)'
+  445 |                         }}
+> 446 |                             {writer.full_name[0]}
+      |                              ^
+  447 |                           </div>
+  448 |                           <div>
+  449 |                             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+  Plugin: vite:react-babel
+  File: /Users/mac/neuro tec/frontend/src/pages/RequesterDashboard.jsx:446:29
+  444|                            backgroundColor: selectedWriter?.id === writer.id ? 'var(--accent-emerald)' : 'var(--primary)'
+  445|                          }}
+  446|                              {writer.full_name[0]}
+     |                               ^
+  447|                            </div>
+  448|                            <div>
+      at constructor (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:365:19)
+      at JSXParserMixin.raise (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:6616:19)
+      at JSXParserMixin.unexpected (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:6636:16)
+      at JSXParserMixin.expect (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:6916:12)
+      at JSXParserMixin.jsxParseAttribute (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4657:12)
+      at JSXParserMixin.jsxParseOpeningElementAfterName (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4679:28)
+      at JSXParserMixin.jsxParseOpeningElementAt (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4674:17)
+      at JSXParserMixin.jsxParseElementAt (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4698:33)
+      at JSXParserMixin.jsxParseElementAt (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4710:32)
+      at JSXParserMixin.jsxParseElementAt (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4710:32)
+      at JSXParserMixin.jsxParseElement (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4761:17)
+      at JSXParserMixin.parseExprAtom (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4771:19)
+      at JSXParserMixin.parseExprSubscripts (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11098:23)
+      at JSXParserMixin.parseUpdate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10916:61)
+      at JSXParserMixin.parseExprOps (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10848:21)
+      at /Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10817:39
+      at JSXParserMixin.allowInAnd (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12443:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10817:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12510:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11692:28)
+      at JSXParserMixin.parseExprAtom (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11348:23)
+      at JSXParserMixin.parseExprAtom (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4776:20)
+      at JSXParserMixin.parseExprSubscripts (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11098:23)
+      at JSXParserMixin.parseUpdate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10916:61)
+      at JSXParserMixin.parseExprOps (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10848:21)
+      at JSXParserMixin.parseFunctionBody (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12110:24)
+      at JSXParserMixin.parseArrowExpression (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12092:10)
+      at JSXParserMixin.parseExprAtom (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11455:25)
+      at JSXParserMixin.parseExprAtom (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:4776:20)
+      at JSXParserMixin.parseExprSubscripts (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11098:23)
+      at JSXParserMixin.parseUpdate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10916:61)
+      at JSXParserMixin.parseExprOps (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10848:21)
+      at /Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10817:39
+      at JSXParserMixin.allowInAnd (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12443:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:10817:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12510:17)
+      at JSXParserMixin.parseExprListItem (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:12192:18)
+      at JSXParserMixin.parseCallExpressionArguments (/Users/mac/neuro tec/frontend/node_modules/@babel/parser/lib/index.js:11269:22)
+3:28:44 PM [vite] hmr update /src/pages/RequesterDashboard.jsx
+3:29:07 PM [vite] hmr update /src/pages/RequesterDashboard.jsx
+3:29:17 PM [vite] hmr update /src/pages/RequesterDashboard.jsx

@@ -42,6 +42,9 @@ export default function RequesterDashboard() {
   const [lightboxImage, setLightboxImage] = useState(null);
   const [lightboxTitle, setLightboxTitle] = useState('');
   
+  // Search state
+  const [searchQuery, setSearchQuery] = useState('');
+  
   // Hiring Dialog State
   const [selectedWriter, setSelectedWriter] = useState(null);
   
@@ -240,6 +243,12 @@ export default function RequesterDashboard() {
     }
   };
 
+  const filteredWriters = writers.filter(writer => 
+    writer.full_name?.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    writer.username?.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    writer.pin_code?.includes(searchQuery)
+  );
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
       
@@ -286,19 +295,51 @@ export default function RequesterDashboard() {
             ) : writers.length === 0 ? (
               <p style={{ color: 'var(--text-muted)' }}>No writers registered yet.</p>
             ) : (
-              <div style={{
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '1rem'
-              }}>
-                {writers.map(writer => (
-                  <div key={writer.id} className="glass-panel glass-panel-hover" style={{
-                    padding: '1.25rem',
+              <>
+                {/* 3D Search Bar */}
+                <div style={{ 
+                  display: 'flex', 
+                  gap: '10px', 
+                  marginBottom: '1.5rem',
+                  alignItems: 'center'
+                }}>
+                  <div className="auth-input-container" style={{ flex: 1, background: 'rgba(255, 255, 255, 0.4)' }}>
+                    <input
+                      type="text"
+                      placeholder="Search writers by name, username or PIN code..."
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                      className="auth-input-field"
+                      style={{ fontSize: '0.88rem' }}
+                    />
+                  </div>
+                  <button 
+                    className="btn-primary" 
+                    style={{ padding: '10px 20px', fontSize: '0.85rem' }}
+                    onClick={(e) => { e.preventDefault(); }}
+                  >
+                    <Search size={14} /> Search
+                  </button>
+                </div>
+
+                {filteredWriters.length === 0 ? (
+                  <p style={{ color: 'var(--text-muted)', textAlign: 'center', padding: '1.5rem 0' }}>
+                    No writers matching "{searchQuery}" were found.
+                  </p>
+                ) : (
+                  <div style={{
                     display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    gap: '1rem',
+                    flexDirection: 'column',
+                    gap: '1rem'
                   }}>
+                    {filteredWriters.map(writer => (
+                      <div key={writer.id} className="glass-panel glass-panel-hover" style={{
+                        padding: '1.25rem',
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        alignItems: 'center',
+                        gap: '1rem',
+                      }}>
                     {/* Left: Info */}
                     <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
                       <div style={{
@@ -410,6 +451,8 @@ export default function RequesterDashboard() {
                 ))}
               </div>
             )}
+          </>
+        )}
           </div>
 
           {/* Section: My Orders */}
